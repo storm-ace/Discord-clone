@@ -1,0 +1,138 @@
+.chat {
+    display: flex;
+    flex-direction: column;
+    background-color: #363a3f;
+    height: 100vh;
+    width: 100%;
+}
+
+.chat__messages {
+    flex: 1;
+    overflow: scroll;
+}
+
+.chat__messages::-webkit--scrollbar {
+    display: none;
+}
+
+.chat__messages {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    flex-direction: column-reverse;
+    display: flex;
+}
+
+.chat__input {
+    color: lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 20px;
+    margin-bottom: 30px;
+    border-top: 1px solid gray;
+    background-color: #474b53;
+}
+
+.chat__input > form > input {
+    padding: 15px;
+    background: transparent;
+    border: none;
+    width: 100%;
+    outline-width: 0;
+    color: white;
+    font-size: large;
+}
+
+.chat__input > form {
+    flex: 1;
+}
+
+.chat__inputButton {
+    display: none;
+}
+
+.chat_inputIcons > .MuiSvgIcon-root{
+    padding: 5px;
+}
+
+.smiley__Panel {
+    border: 1px solid #474b53;
+    border-radius: 10px;
+    position: absolute;
+    width: 20%;
+    height: 33%;
+    bottom: 115px;
+    right: 210px;
+    visibility: hidden;
+    background: #2f3135;
+}
+
+.mostlyUsed {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #2f3135;
+    color: white;
+    border-bottom: 3px solid #26282c;
+}
+
+.mostlyUsed__Grid {
+    display: flex;
+    padding: 20px;
+    margin: 3px, 1px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    grid-column-gap: 1px;
+    padding: 0px 2px;
+}
+
+.grid-item > button {
+    background: none;
+	color: inherit;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    font-size: 30px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+}
+
+.grid-item > button:hover {
+    border: 2px solid;
+    border-radius: 10px;
+    background: #4f5155;
+    cursor: pointer;
+}
+
+.isTyping__panel {
+    position: absolute;
+    bottom: 10px;
+    margin-left: 30px;
+    font-size: 12px;
+    text-align: center;
+    visibility: visible;
+    color: white;
+}
+
+.emojiCode__Panel {
+    border: 2px solid #26282c;
+    border-radius: 10px;
+    background: #26282c;
+    bottom: 5px;
+    position: absolute;
+    width: 99%;
+    color: white;
+    font-size: 16px;
+    visibility: hidden;
+}
+
+#smiley__button:hover {
+    color: gray;
+}

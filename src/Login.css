@@ -1,0 +1,56 @@
+.login {
+    margin: auto;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    width: 100%;
+    scroll-behavior: unset;
+}
+
+.info {
+    border: solid gray;
+    border-radius: 20px;
+    margin: 35px;
+    padding: 15px;
+    text-align: center;
+    width: 30vh;
+    display: flex;
+    flex-direction: column;
+    float: left;
+}
+
+.Changelogs {
+    border: solid gray;
+    border-radius: 20px;
+    margin: 0px 35px;
+    padding: 15px;
+    text-align: center;
+    width: 115vh;
+    display: flex;
+    flex-direction: column;
+    float: center;
+}
+
+.button_panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button_panel > button {
+    width: 300px;
+    background-color: #738adb;
+    color: #eff2f5;
+    font-weight: 800;
+    margin: 10px;
+}
+
+.button_panel > button:hover {
+    background-color: black;
+    color: #738adb;
+}
+
+.button_panel > div > img {
+    object-fit: contain;
+    height: 150px;
+}
